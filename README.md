@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # AppdevExam
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.19.
@@ -57,3 +58,7 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+=======
+# angular-lab-app
+Angular Lab Exam - Application Development 1
+>>>>>>> 5e276d6788a362f04e5a9f5d52c5e26a14b5fb49
