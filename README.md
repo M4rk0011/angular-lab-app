@@ -1,14 +1,15 @@
 <<<<<<< HEAD
 # AppdevExam
-//This is my Prelim Exam in Application Development
+#This is my Prelim Exam in Application Development
 
-//Technologies used
+#Technologies used
 -vscode
 -node.js 18
 -command promt nodejs
 -angular 17 
 -typescript 15
 -git and Github
+
 -This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.19.
 
 ## Development server
