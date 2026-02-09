@@ -1,0 +1,227 @@
+<!-- Hero Section -->
+<div class="hero-section text-center py-5 mb-5 rounded" style="background: linear-gradient(135deg, #2c3e50, #4a6491);">
+  <div class="container">
+    <h1 class="display-4 fw-bold text-white mb-3">{{ appTitle }}</h1>
+    <p class="lead text-light mb-4">{{ welcomeMessage }}</p>
+    <p class="text-light opacity-75 mb-4">{{ description }}</p>
+    <div class="d-flex justify-content-center gap-3 flex-wrap">
+      <a routerLink="/register" class="btn btn-lg btn-primary px-4">
+        <i class="bi bi-pencil-square me-2"></i>Try Registration Form
+      </a>
+      <a routerLink="/profile" class="btn btn-lg btn-outline-light px-4">
+        <i class="bi bi-person-circle me-2"></i>View Profile
+      </a>
+      <a href="https://angular.io" target="_blank" class="btn btn-lg btn-outline-info px-4">
+        <i class="bi bi-box-arrow-up-right me-2"></i>Angular Docs
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <!-- Student Information Card -->
+  <div class="row mb-5">
+    <div class="col-12">
+      <div class="card border-primary shadow-sm">
+        <div class="card-header bg-primary text-white">
+          <h4 class="mb-0"><i class="bi bi-person-badge me-2"></i>Student Information</h4>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-3 text-center mb-3 mb-md-0">
+              <div class="bg-primary rounded-circle d-inline-flex align-items-center justify-content-center" 
+                   style="width: 100px; height: 100px;">
+                <i class="bi bi-person-fill text-white" style="font-size: 3rem;"></i>
+              </div>
+            </div>
+            <div class="col-md-9">
+              <div class="row">
+                <div class="col-md-6">
+                  <p class="mb-2"><strong>Name:</strong> {{ student.name }}</p>
+                  <p class="mb-2"><strong>Course:</strong> {{ student.course }}</p>
+                </div>
+                <div class="col-md-6">
+                  <p class="mb-2"><strong>Exam Code:</strong> {{ student.examCode }}</p>
+                  <p class="mb-0"><strong>Instructor:</strong> {{ student.instructor }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <!-- TypeScript Variables Card -->
+    <div class="col-lg-6 mb-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-header bg-info text-white">
+          <h4 class="mb-0"><i class="bi bi-code-slash me-2"></i>TypeScript Primitive Variables</h4>
+        </div>
+        <div class="card-body">
+          <p class="text-muted mb-4">Demonstrating TypeScript primitive type declarations with Angular interpolation.</p>
+          
+          <div class="row g-3">
+            <div class="col-12">
+              <div class="card bg-light border-0">
+                <div class="card-body">
+                  <div class="d-flex align-items-center mb-2">
+                    <div class="bg-info rounded-circle me-3 d-flex align-items-center justify-content-center" 
+                         style="width: 40px; height: 40px;">
+                      <i class="bi bi-text-left text-white"></i>
+                    </div>
+                    <div>
+                      <h6 class="mb-0">String Type</h6>
+                      <small class="text-muted">appTitle variable</small>
+                    </div>
+                  </div>
+                  <code class="bg-dark text-light p-2 rounded d-block">{{ appTitle }}</code>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-6">
+              <div class="card bg-light border-0 h-100">
+                <div class="card-body">
+                  <div class="d-flex align-items-center mb-2">
+                    <div class="bg-warning rounded-circle me-3 d-flex align-items-center justify-content-center" 
+                         style="width: 40px; height: 40px;">
+                      <i class="bi bi-123 text-white"></i>
+                    </div>
+                    <div>
+                      <h6 class="mb-0">Number Type</h6>
+                      <small class="text-muted">studentCount variable</small>
+                    </div>
+                  </div>
+                  <p class="display-6 text-center text-warning fw-bold">{{ studentCount }}</p>
+                  <p class="text-center mb-0">registered students</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-6">
+              <div class="card bg-light border-0 h-100">
+                <div class="card-body">
+                  <div class="d-flex align-items-center mb-2">
+                    <div class="bg-success rounded-circle me-3 d-flex align-items-center justify-content-center" 
+                         style="width: 40px; height: 40px;">
+                      <i class="bi bi-check-circle text-white"></i>
+                    </div>
+                    <div>
+                      <h6 class="mb-0">Boolean Type</h6>
+                      <small class="text-muted">isActive variable</small>
+                    </div>
+                  </div>
+                  <div class="text-center">
+                    <span class="badge bg-{{ isActive ? 'success' : 'danger' }} p-3 fs-6">
+                      {{ isActive ? 'ACTIVE' : 'INACTIVE' }}
+                    </span>
+                    <p class="mt-2 mb-0">Application Status</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-12">
+              <div class="card bg-light border-0">
+                <div class="card-body">
+                  <div class="row align-items-center">
+                    <div class="col-md-8">
+                      <h6 class="mb-1">Version Control</h6>
+                      <p class="text-muted mb-0">Current application version</p>
+                    </div>
+                    <div class="col-md-4 text-end">
+                      <span class="badge bg-secondary fs-5 p-2">v{{ version }}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Features Card -->
+    <div class="col-lg-6 mb-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-header bg-success text-white">
+          <h4 class="mb-0"><i class="bi bi-stack me-2"></i>Angular Fundamentals Demonstrated</h4>
+        </div>
+        <div class="card-body">
+          <p class="text-muted mb-4">This project implements all required Angular concepts for the lab assessment:</p>
+          
+          <div class="row g-3">
+            <div class="col-md-6" *ngFor="let feature of features">
+              <div class="card border h-100">
+                <div class="card-body text-center">
+                  <div class="bg-primary bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-3" 
+                       style="width: 60px; height: 60px;">
+                    <i class="bi {{ feature.icon }} text-primary" style="font-size: 1.5rem;"></i>
+                  </div>
+                  <h6 class="card-title">{{ feature.title }}</h6>
+                  <p class="card-text small text-muted">{{ feature.description }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="mt-4 pt-3 border-top">
+            <h6 class="mb-3">Project Requirements Checklist</h6>
+            <div class="list-group">
+              <div class="list-group-item border-0 py-2">
+                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                Angular CLI Project Initialization
+              </div>
+              <div class="list-group-item border-0 py-2">
+                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                4 Distinct Components with Routing
+              </div>
+              <div class="list-group-item border-0 py-2">
+                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                TypeScript Type Declarations
+              </div>
+              <div class="list-group-item border-0 py-2">
+                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                Reactive Forms with Validation
+              </div>
+              <div class="list-group-item border-0 py-2">
+                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                Git & GitHub Version Control
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Call to Action -->
+  <div class="row mt-4">
+    <div class="col-12">
+      <div class="card bg-dark text-white shadow-lg">
+        <div class="card-body text-center py-5">
+          <h3 class="mb-3">Ready to Explore the Application?</h3>
+          <p class="lead mb-4 opacity-75">Navigate through the components using the menu or buttons below.</p>
+          <div class="d-flex justify-content-center flex-wrap gap-3">
+            <a routerLink="/profile" class="btn btn-light btn-lg px-4">
+              <i class="bi bi-person-vcard me-2"></i>View Profile Component
+            </a>
+            <a routerLink="/register" class="btn btn-primary btn-lg px-4">
+              <i class="bi bi-clipboard-check me-2"></i>Test Registration Form
+            </a>
+            <button class="btn btn-outline-light btn-lg px-4" (click)="isActive = !isActive">
+              <i class="bi bi-toggle-on me-2"></i>Toggle Status
+            </button>
+          </div>
+          <p class="mt-4 mb-0 small opacity-50">
+            <i class="bi bi-info-circle me-1"></i>
+            Current status: <strong>{{ isActive ? 'Active' : 'Inactive' }}</strong> | 
+            Version {{ version }} | {{ currentYear }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
