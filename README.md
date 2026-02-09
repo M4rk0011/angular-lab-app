@@ -62,3 +62,12 @@ For more information on using the Angular CLI, including detailed command refere
 # angular-lab-app
 Angular Lab Exam - Application Development 1
 >>>>>>> 5e276d6788a362f04e5a9f5d52c5e26a14b5fb49
+"" 
+"## ? Features Implemented" 
+"- Angular CLI project initialization" 
+"- 4 distinct components with routing" 
+"- Navigation bar with functional links" 
+"- TypeScript primitive and object types" 
+"- Reactive forms with validation" 
+"- Client-side routing" 
+"- Git version control with 5+ commits" 
